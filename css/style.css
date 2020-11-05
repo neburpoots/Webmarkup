@@ -188,3 +188,293 @@ text-align: center;
     }
 }
 /* EINDE index.html */
+
+/* CSS howsolarworks.html */
+
+.articlesSolarWorks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.box2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    background-color: green;
+}
+
+.box1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    background-color: yellow;
+}
+
+.box3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #f54747;
+}
+
+.box4 {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 7;
+    background-color: #2e57ea;
+}
+
+.box5 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 8;
+    background-color: #9370db;
+}
+
+.box6 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 7;
+    grid-row-end: 8;
+    background-color: red;
+}
+
+.articleSolar {
+   padding: 20px;
+}
+
+.asideSolarWorks aside {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.asideSolarWorks img {
+    max-width: 100%;
+}
+
+/* Howsolarworks.html responsive*/
+
+@media (max-width: 480px) {
+
+    .articlesSolarWorks {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .box2 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        background-color: green;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+        background-color: yellow;
+    }
+
+    .box3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #f54747;
+    }
+
+    .box4 {
+        display: none;
+    }
+
+    .box5 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: #9370db;
+    }
+
+    .box6 {
+        display: none;
+    }
+
+    .articleSolar {
+        padding: 20px;
+    }
+
+    .asideSolarWorks aside {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 1280px) and (min-width: 480px) {
+
+    .articlesSolarWorks {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .box2 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        background-color: green;
+    }
+
+    .box1 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        background-color: yellow;
+    }
+
+    .box3 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 7;
+        background-color: #f54747;
+    }
+
+    .box4 {
+        display: none;
+    }
+
+    .box5 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 4;
+        grid-row-end: 7;
+        background-color: #9370db;
+    }
+
+    .box6 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 7;
+        grid-row-end: 9;
+        background-color: red;
+    }
+
+    .articleSolar {
+        padding: 20px;
+    }
+
+    .asideSolarWorks figure:nth-child(3) {
+        display: none;
+    }
+    .asideSolarWorks aside {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+}
+
+/* Einde Howsolarworks.html pagina*/
+
+/* begin eu solar pagina */
+.asidesolareu img {
+    max-width: 100%;
+}
+
+.asidesolareu {
+    flex: 1;
+}
+
+.tableEU {
+    flex: 2;
+}
+
+table.tableizer-table {
+    font-size: 12px;
+    border: 1px solid #CCC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.tableizer-table td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;
+}
+.tableizer-table th {
+    background-color: #104E8B;
+    color: #FFF;
+    font-weight: bold;
+}
+
+
+
+
+/* Responsive eusolar*/
+@media (max-width: 1280px) and (min-width: 480px) {
+    .asidesolareu {
+        flex-basis: 100%;
+    }
+
+    .asidesolareu img {
+        max-width: 100%;
+    }
+
+    .asidesolareu aside {
+        display: flex;
+    }
+
+    .asidesolareu figcaption {
+        flex: 1;
+    }
+
+    .asidesolareu figure:nth-child(1) {
+        display: none;
+    }
+
+    .tableEU {
+        flex: none;
+        width: 100%;
+    }
+
+    .tableEU table {
+        width: 100%;
+    }
+
+
+}
+@media (max-width: 1280px) {
+    .tableEU table th:nth-child(2), .tableEU table th:nth-child(3) {
+        display: none;
+    }
+
+    .tableEU table tr td:nth-child(2), .tableEU table tr td:nth-child(3) {
+        display: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .tableEU table th:nth-child(4), .tableEU table th:nth-child(5) {
+        display: none;
+    }
+
+    .tableEU table tr td:nth-child(4), .tableEU table tr td:nth-child(5) {
+        display: none;
+    }
+
+    body .container {
+        width: 100%;
+    }
+
+    body .flexfooter {
+        width: 100%;
+    }
+}

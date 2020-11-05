@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d05075e1-da33-4f43-a5f5-e8b6ef0539dc" name="Default Changelist" comment="" />
+    <list default="true" id="d05075e1-da33-4f43-a5f5-e8b6ef0539dc" name="Default Changelist" comment="Homepage">
+      <change afterPath="$PROJECT_DIR$/eusolar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/howsolarworks.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +37,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -48,14 +72,44 @@
       <option name="presentableId" value="Default" />
       <updated>1604401267718</updated>
       <workItem from="1604401268870" duration="28516000" />
-      <workItem from="1604438433089" duration="382000" />
+      <workItem from="1604438433089" duration="1039000" />
+      <workItem from="1604486016323" duration="7854000" />
+      <workItem from="1604572164099" duration="4861000" />
     </task>
+    <task id="LOCAL-00001" summary="Homepage">
+      <created>1604438829772</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604438829772</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Homepage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Homepage" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="1468" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604573503136">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1468" y="355" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604573503136" />
     <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1604438758756">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -68,6 +122,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1121" y="598" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604438701075" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1604438864143">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604438864143" />
     <state x="1823" y="332" key="run.anything.popup" timestamp="1604412716117">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
