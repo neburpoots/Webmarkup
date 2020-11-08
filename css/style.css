@@ -29,6 +29,7 @@ h1 {
 h2 {
     font-size: 1.5em;
 }
+
 /* header */
 
 .header {
@@ -196,6 +197,8 @@ figcaption {
 
 .articles, .copyright {
     flex: 2;
+    flex-grow: 2;
+    flex-shrink: 2;
 }
 
 .aside, .cookie {
@@ -230,6 +233,9 @@ figcaption {
     padding: 20px;
 }
 
+footer h2 {
+    font-size: 14px;
+}
 /*tablet index */
 @media (max-width: 1280px) {
     .aside {
@@ -343,7 +349,11 @@ figcaption {
 }
 
 .articleSolar {
-   padding: 20px;
+    padding: 20px;
+}
+
+.articleSolar p::first-letter {
+    font-size: 20px;
 }
 
 .asideSolarWorks aside {
@@ -630,7 +640,7 @@ table.tableclass tr:nth-child(odd) {
 }
 
 .contactform p:nth-child(odd) {
-   padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .contactform textarea {
