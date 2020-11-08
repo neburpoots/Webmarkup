@@ -1,20 +1,21 @@
-@import url(https://fonts.googleapis.com/css2?family=Notable&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
 body {
-    letter-spacing: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0px;
+    font-family: "Arial", "Helvetica", "sans-serif";
     margin: 0;
     padding: 0;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
 }
 
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
-    background-color: #fff
+    background-color: #FFFFFF;
 }
 
 a {
-    color: #000
+    color: #000;
 }
 
 h1 {
@@ -22,27 +23,32 @@ h1 {
     line-height: 40px;
     text-indent: initial;
     word-spacing: normal;
-    font-size: 2rem
+    font-size: 2rem;
 }
 
 h2 {
-    font-size: 1.5em
+    font-size: 1.5em;
+}
+
+/* header */
+
+.kopje {
+    display: none;
 }
 
 .header {
-    padding: 20px
+    padding: 20px;
 }
-
 .logo {
     min-width: 200px;
     max-height: 100px;
-    object-fit: cover
+    object-fit: cover;
 }
 
 .header .menu {
     clear: both;
     max-height: 0;
-    transition: max-height .2s ease-out
+    transition: max-height .2s ease-out;
 }
 
 .header .icoon {
@@ -51,7 +57,7 @@ h2 {
     float: right;
     padding: 28px 20px;
     position: relative;
-    user-select: none
+    user-select: none;
 }
 
 .header .icoon .menuicoon {
@@ -60,230 +66,238 @@ h2 {
     height: 2px;
     position: relative;
     transition: background .2s ease-out;
-    width: 18px
+    width: 18px;
 }
 
-.header .icoon .menuicoon:after,
-.header .icoon .menuicoon:before {
+.header .icoon .menuicoon:before,
+.header .icoon .menuicoon:after {
     background: #333;
     content: '';
     display: block;
     height: 100%;
     position: absolute;
     transition: all .2s ease-out;
-    width: 100%
+    width: 100%;
 }
 
 .header .icoon .menuicoon:before {
-    top: 5px
+    top: 5px;
 }
 
 .header .icoon .menuicoon:after {
-    top: -5px
+    top: -5px;
 }
 
 .header .headerinput {
-    display: none
+    display: none;
 }
 
-.header .headerinput:checked~.menu {
-    max-height: 240px
+.header .headerinput:checked ~ .menu {
+    max-height: 240px;
 }
 
-.header .headerinput:checked~.icoon .menuicoon {
-    background: 0 0
+.header .headerinput:checked ~ .icoon .menuicoon {
+    background: transparent;
 }
 
-.header .headerinput:checked~.icoon .menuicoon:before {
-    transform: rotate(-45deg)
+.header .headerinput:checked ~ .icoon .menuicoon:before {
+    transform: rotate(-45deg);
 }
 
-.header .headerinput:checked~.icoon .menuicoon:after {
-    transform: rotate(45deg)
+.header .headerinput:checked ~ .icoon .menuicoon:after {
+    transform: rotate(45deg);
 }
 
-.header .headerinput:checked~.icoon:not(.steps) .menuicoon:after,
-.header .headerinput:checked~.icoon:not(.steps) .menuicoon:before {
-    top: 0
+.header .headerinput:checked ~ .icoon:not(.steps) .menuicoon:before,
+.header .headerinput:checked ~ .icoon:not(.steps) .menuicoon:after {
+    top: 0;
 }
 
-@media (min-width:480px) {
-    .header ul>li {
-        float: left
+@media (min-width: 480px) {
+    .header ul > li {
+        float: left;
     }
     .header .menu {
-        max-height: none
+
+        max-height: none;
     }
     .header .icoon {
-        display: none
+        display: none;
     }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
     .header li {
-        width: 100%
+        width: 100%;
     }
 }
 
 ul {
-    padding-left: 0;
+    padding-left: 0px;
     overflow: hidden;
     list-style-type: none;
-    margin: 0
+    margin: 0;
 }
 
 li {
-    padding: 0;
+    padding: 0px;
     width: fit-content;
-    float: left
+    float: left;
 }
 
 nav {
     border-top: 1px solid grey;
-    border-bottom: 1px solid grey
+    border-bottom: 1px solid grey;
 }
 
 nav li a {
     text-decoration: none;
-    color: #000;
+    color: black;
     padding: 10px;
-    display: block
+    display: block;
+
 }
 
 nav li a:hover {
-    background-color: #000;
-    color: #fff
+    background-color: black;
+    color: #ffffff;
 }
+
+/* einde header */
 
 video {
     width: 100%;
-    flex-basis: 100%
+    flex-basis: 100%;
 }
 
-.product section {
+.product section{
     max-width: 50%;
-    float: left
+    float: left;
 }
 
 figcaption {
-    text-align: center
+    text-align: center;
 }
 
-.product figure {
+.product figure{
     margin: 0;
     max-width: 50%;
-    float: left
+    float: left;
 }
 
 .product figure img {
-    max-width: 100%
+    max-width: 100%;
 }
-
 .product a:active {
-    color: #00f
+    color: blue;
 }
 
-.main {
+.main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px
+    padding: 20px;
 }
 
-.articles,
-.copyright {
+.articles, .copyright {
     flex: 2;
     flex-grow: 2;
-    flex-shrink: 2
+    flex-shrink: 2;
 }
 
-.aside,
-.cookie {
-    flex: 1
+.aside, .cookie {
+    flex: 1;
 }
 
 .product {
     flex-basis: 100%;
-    display: inline-block
+    display: inline-block;
 }
 
 .aside li {
-    padding: 10px 0 10px 0;
-    width: 100%
+    padding: 10px 0px 10px 0px;
+    width: 100%;
 }
 
 .cookie {
     padding: 20px;
-    background-color: #fa0;
+    background-color: #FA0;
     opacity: 50%;
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 0px;
+    right: 0px;
     width: 33%;
     z-index: 9999;
-    text-transform: uppercase
+    text-transform: uppercase;
 }
 
 .footer {
     background-color: #2b2b2b;
-    color: #fff;
-    padding: 20px
+    color: #ffffff;
+    padding: 20px;
 }
 
-@media (max-width:1280px) {
+footer h2 {
+    font-size: 14px;
+}
+/*tablet index */
+@media (max-width: 1280px) {
     .aside {
-        order: 1
+        order: 1;
     }
     .articles {
         order: 3;
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column-reverse
+        flex-direction: column-reverse;
     }
     video {
-        order: 2
+        order: 2;
     }
+
     .product {
-        display: flex
+        display: flex;
+
     }
+
 }
 
-@media (min-width:480px) and (max-width:1280px) {
+@media (min-width: 480px) and (max-width: 1280px) {
     .product section {
-        order: 2
+        order: 2;
     }
     .product figure {
-        order: 1
+        order: 1;
     }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
     video {
-        display: none
+        display: none;
     }
     .aside {
         flex: none;
-        max-width: 100%
+        max-width: 100%;
     }
     .product {
-        flex-wrap: wrap
+        flex-wrap: wrap;
     }
+
     .product section {
-        max-width: 100%
+        max-width: 100%;
     }
     .product figure {
-        max-width: 100%
+        max-width: 100%;
     }
 }
 
 .anchor {
     padding: 20px;
-    width: 100%
+    width: 100%;
 }
+/* EINDE index.html */
 
-.kopje {
-    display: none
-}
+/* CSS howsolarworks.html */
 
 .articlesSolarWorks {
     display: grid;
@@ -296,7 +310,7 @@ figcaption {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-color: green
+    background-color: #008000;
 }
 
 .box1 {
@@ -304,7 +318,7 @@ figcaption {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 7;
-    background-color: #ffc72b
+    background-color: #FFC72B;
 }
 
 .box3 {
@@ -312,7 +326,7 @@ figcaption {
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 4;
-    background-color: #f54747
+    background-color: #f54747;
 }
 
 .box4 {
@@ -320,7 +334,7 @@ figcaption {
     grid-column-end: 7;
     grid-row-start: 4;
     grid-row-end: 7;
-    background-color: #2e57ea
+    background-color: #2e57ea;
 }
 
 .box5 {
@@ -328,7 +342,7 @@ figcaption {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 8;
-    background-color: #9370db
+    background-color: #9370db;
 }
 
 .box6 {
@@ -336,122 +350,145 @@ figcaption {
     grid-column-end: 4;
     grid-row-start: 7;
     grid-row-end: 8;
-    background-color: red
+    background-color: #ff0000;
 }
 
 .articleSolar {
-    padding: 20px
+    padding: 20px;
 }
 
 .articleSolar p::first-letter {
-    font-size: 20px
+    font-size: 20px;
 }
 
 .asideSolarWorks aside {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .asideSolarWorks img {
-    max-width: 100%
+    max-width: 100%;
 }
 
-@media (max-width:480px) {
+/* Howsolarworks.html responsive*/
+
+@media (max-width: 480px) {
+
     .articlesSolarWorks {
         display: grid;
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
+
     }
+
     .box2 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 4;
-        background-color: green
+        background-color: #008000;
     }
+
     .box1 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 4;
         grid-row-end: 5;
-        background-color: #ff0
+        background-color: #ffff00;
     }
+
     .box3 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
-        background-color: #f54747
+        background-color: #f54747;
     }
+
     .box4 {
-        display: none
+        display: none;
     }
+
     .box5 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-        background-color: #9370db
+        background-color: #9370db;
     }
+
     .box6 {
-        display: none
+        display: none;
     }
+
     .articleSolar {
-        padding: 20px
+        padding: 20px;
     }
+
     .asideSolarWorks aside {
         display: grid;
-        grid-template-columns: 1fr
+        grid-template-columns: 1fr;
     }
+
 }
 
-@media (max-width:1280px) and (min-width:480px) {
+@media (max-width: 1280px) and (min-width: 480px) {
+
     .articlesSolarWorks {
         display: grid;
-        grid-template-columns: 1fr 1fr
+        grid-template-columns: 1fr 1fr;
+
     }
+
     .box2 {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 4;
-        background-color: green
+        background-color: green;
     }
+
     .box1 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 3;
-        background-color: #ff0
+        background-color: yellow;
     }
+
     .box3 {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 3;
         grid-row-end: 7;
-        background-color: #f54747
+        background-color: #f54747;
     }
+
     .box4 {
-        display: none
+        display: none;
     }
+
     .box5 {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 4;
         grid-row-end: 7;
-        background-color: #9370db
+        background-color: #9370db;
     }
+
     .box6 {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 7;
         grid-row-end: 9;
-        background-color: red
+        background-color: red;
     }
+
     .articleSolar {
-        padding: 20px
+        padding: 20px;
     }
+
     .asideSolarWorks figure:nth-child(3) {
-        display: none
+        display: none;
     }
     .asideSolarWorks aside {
         display: grid;
@@ -459,16 +496,19 @@ figcaption {
     }
 }
 
+/* Einde Howsolarworks.html pagina*/
+
+/* begin eu solar pagina */
 .asidesolareu img {
-    max-width: 100%
+    max-width: 100%;
 }
 
 .asidesolareu {
-    flex: 1
+    flex: 1;
 }
 
 .tableEU {
-    flex: 2
+    flex: 2;
 }
 
 table.tableclass {
@@ -477,157 +517,174 @@ table.tableclass {
     width: 100%;
     border-width: 1px;
     border-style: double;
-    border-color: #ccc
+    border-color: #ccc;
 }
-
 .tableclass td {
     padding: 4px;
     margin: 3px;
-    border: 1px solid #ccc
+    border: 1px solid #CCC;
 }
-
 .tableclass th {
-    background-color: #104e8b;
-    color: #fff;
-    font-weight: 700
+    background-color: #104E8B;
+    color: #FFF;
+    font-weight: bold;
 }
-
 .data {
-    flex-basis: 100%
+    flex-basis: 100%;
 }
 
-table.tableclass td:first-child,
-th:first-child {
-    background-color: #ff0;
-    color: #000
+table.tableclass td:first-child, th:first-child {
+    background-color: #FF0;
+    color: black;
 }
 
 table.tableclass tr:nth-child(even) {
-    background-color: #cff
+    background-color: #CFF;
 }
 
 table.tableclass tr:nth-child(odd) {
-    background-color: #fff
+    background-color: #FFF;
 }
 
-@media (max-width:1280px) and (min-width:480px) {
+/* Responsive eusolar*/
+@media (max-width: 1280px) and (min-width: 480px) {
     .asidesolareu {
-        flex-basis: 100%
+        flex-basis: 100%;
     }
+
     .asidesolareu img {
-        max-width: 100%
+        max-width: 100%;
     }
+
     .asidesolareu aside {
-        display: flex
+        display: flex;
     }
+
     .asidesolareu figcaption {
-        flex: 1
+        flex: 1;
     }
+
     .asidesolareu figure:nth-child(1) {
-        display: none
+        display: none;
     }
+
     .tableEU {
         flex: none;
-        width: 100%
+        width: 100%;
     }
+
     .tableEU table {
-        width: 100%
+        width: 100%;
+    }
+
+
+}
+@media (max-width: 1280px) {
+    .tableEU table th:nth-child(2), .tableEU table th:nth-child(3) {
+        display: none;
+    }
+
+    .tableEU table tr td:nth-child(2), .tableEU table tr td:nth-child(3) {
+        display: none;
     }
 }
 
-@media (max-width:1280px) {
-    .tableEU table th:nth-child(2),
-    .tableEU table th:nth-child(3) {
-        display: none
-    }
-    .tableEU table tr td:nth-child(2),
-    .tableEU table tr td:nth-child(3) {
-        display: none
-    }
-}
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
     .tableEU {
-        flex-basis: 100%
+        flex-basis: 100%;
     }
-    .tableEU table th:nth-child(4),
-    .tableEU table th:nth-child(5) {
-        display: none
+    .tableEU table th:nth-child(4), .tableEU table th:nth-child(5) {
+        display: none;
     }
-    .tableEU table tr td:nth-child(4),
-    .tableEU table tr td:nth-child(5) {
-        display: none
+
+    .tableEU table tr td:nth-child(4), .tableEU table tr td:nth-child(5) {
+        display: none;
     }
 }
 
-.maincontact {
+/* einde css Solar Eu */
+
+/* contact.html */
+
+.maincontact{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 20px
+    padding: 20px;
 }
 
 .contactform {
-    flex: 2
+    flex: 2;
 }
 
 .asidecontact {
-    flex: 1
+    flex: 1;
 }
 
-.asidecontact aside img {
-    max-width: 100%
+.asidecontact aside img{
+    max-width: 100%;
 }
 
 .contactform label {
-    width: 100%
+    width: 100%;
 }
 
-.contactform input {
+.contactform input{
     display: inline-block;
     font-size: 14px;
     padding: 7px 12px;
     color: #333;
-    border: 1px solid #ddd;
+    border: 1px solid #dddddd;
     border-radius: 3px;
-    line-height: 20px
+    line-height: 20px;
 }
 
 .contactform p {
-    margin: 5px
+    margin: 5px;
 }
 
 .contactform p:nth-child(odd) {
-    padding-bottom: 10px
+    padding-bottom: 10px;
 }
 
 .contactform textarea {
     width: 100%;
-    resize: vertical
+    resize: vertical;
 }
 
 .contactinfo {
     width: 100%;
     flex-basis: 100%;
-    padding-bottom: 30px
+    padding-bottom: 30px;
 }
 
-header+p {
-    color: #000
+header + p {
+    color: #000000;
 }
 
-.contactform input[type=submit]:hover {
-    cursor: pointer
+.contactform input[type="submit"]:hover {
+    cursor: pointer;
 }
 
-@media (max-width:1280px) {
+/*Contact responsive */
+@media (max-width: 1280px) {
     .contactform {
-        flex: 1
+        flex: 1;
     }
 }
 
-@media (max-width:480px) {
+@media (max-width: 480px) {
     .contactform {
-        flex-basis: 100%
+        flex-basis: 100%;
+    }
+
+    .asidecontact aside {
+        display: grid;
+        grid-template-areas: "figuur1"
+                            "figuur2"
+                            "figuur3";
     }
 }
+
+
