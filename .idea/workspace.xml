@@ -80,7 +80,7 @@
       <workItem from="1604597831151" duration="1421000" />
       <workItem from="1604659526091" duration="11226000" />
       <workItem from="1604761914605" duration="9499000" />
-      <workItem from="1604832376849" duration="29016000" />
+      <workItem from="1604832376849" duration="35341000" />
     </task>
     <task id="LOCAL-00001" summary="Homepage">
       <created>1604438829772</created>
@@ -103,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604855636894</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Alle vervolg pagina's 8-11">
+      <created>1604865010961</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1604865010961</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,10 +150,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1121" y="598" key="Github.ShareDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604438701075" />
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1604855661634">
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2" timestamp="1604865017896">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604855661634" />
+    <state x="872" y="433" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1604865017896" />
     <state x="1823" y="332" key="run.anything.popup" timestamp="1604412716117">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
